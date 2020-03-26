@@ -1,0 +1,6 @@
+seed 293845
+manual Black
+auto White
+
+# Next, receive moves from other player and respond until someone wins.
+

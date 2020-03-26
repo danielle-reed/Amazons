@@ -1,0 +1,40 @@
+# Test that erroneous moves do not change the board.
+manual Black
+
+# Wrong piece moves.
+d10-d9(e9)
+dump
+
+# Not a queen move.
+d1-e4(e5)
+dump
+
+# Spear throw is not a queen move
+d1-d4(g5)
+dump
+
+# Attempts to move on or through another piece
+a4-a7(b7)
+dump
+j4-j8(i8)
+dump
+
+# Attempt to throu spear on or through another piece
+d1-d3(d10)
+dump
+d1-a1(a5)
+dump
+
+g1-g6(d9)
+dump
+# Attempt to move on or through spear.
+d10-d9(c9)
+dump
+d10-d2(c2)
+dump
+
+# Attempt to throw spear on or through another spear
+d10-e9(d9)
+dump
+g10-g9(a9)
+dump
